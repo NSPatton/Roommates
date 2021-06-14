@@ -65,7 +65,7 @@ namespace Roommates.Repositories
 
                     if (reader.Read())
                     {
-                        Chore = new Chore
+                        chore = new Chore
                         {
                             Id = id,
                             Name = reader.GetString(reader.GetOrdinal("Name"))
